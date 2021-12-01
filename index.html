@@ -1,0 +1,124 @@
+<html>
+  <head>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src = "graph.js"></script>
+  <script src = "ajax.js"></script>
+  </head>
+  <body onload='getData();'>
+
+  <div class = "topnav" >
+    <a class="active" href="index.html">Home</a>
+    <a href="news.html">Game</a>
+    <a href="contact.html">Contact</a>
+    <div id = 'center'>
+    <p id = 'demo'>Project Part 4 Welcome To This Amazing Project</p>
+    </div>
+  </div>
+<br><br>
+
+    <p id = 'body'>Search Based On State:</p>
+    <input type="text" id="locText"placeholder="Type Initials Of State"></input>
+    <button onclick="getLocData();">Graph</button> 
+    <br><br><br>
+    <hr></hr>
+    
+  <!-- <div class = 'header'>
+    <h1>Project Part 4</h1>
+    <h2>Welcome To This Amazing Project (Kind of made me cry at night, but it's okay!)</h2>
+  </div>
+
+   -->
+    
+    <h3 id = 'showDate'>Displaying Data From Date: </h3>
+    <div id = 'barChart'></div><br>
+    <hr></hr>
+    <br><br><br>
+
+    <center>
+      <div id = 'pieChart'></div>
+    </center>
+    <br>
+    <hr></hr>
+    <br><br><br>
+
+    <div id = 'lineGraph'></div>
+    
+    <footer>
+      Powered by Plotly and CDC
+    </footer>
+
+
+
+
+    <style>
+      #demo{
+        text-align:center;
+        font-weight: bold;
+        padding: 10px 30px;
+        /* margin-left:-1000px; */
+      }
+      hr{
+        height: 1px;
+        background-color: #ccc;
+        border: none;
+    }
+      body{
+        margin: 0;
+        background-color:#ad582d;
+        /* #DCDCDC */
+        
+      }
+      #center{
+        background-color:black;
+    
+      }
+      #body{
+        font-size:30px;
+      }
+    .header {
+      padding: 30px;
+      
+      background: grey;
+    }
+      .topnav {
+      font-family: monospace;
+      overflow: hidden;
+      background-color:#c7825f ;
+      /* position: sticky; */
+	    top: 0;
+      color:white;
+    
+      /* #333 */
+      }
+
+     .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+    }
+      #locText{
+        font-size: 16px;
+        outline:none;
+        padding:5px 20px;
+        border-radius:20px;
+      }
+      button{
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover{
+        color:white;
+      }
+    </style>
+
+  </body>
+
+
+</html>

@@ -10,7 +10,7 @@ Gets the Locations(states) as the x value, and the Percent fully vaccinated as y
 # pieGraph:
 Displays the Percent of Vaccine Manufacture Share. Based on (Pfizer,Moderna,Jannsen,Unknown)
 
-#lineGraph:
+# lineGraph:
 Displays the percentage of people fully vaccinated based on the user input (of state)
 
 

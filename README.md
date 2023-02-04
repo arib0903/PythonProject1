@@ -1,5 +1,4 @@
 # Python Project Servers
-About Me:
 -----------------------------
 - The application creates a server that gets Covid Vaccine data from the cdc website\
 - Uses those datas to make certain graphs(barChart,pieGraph,lineGraph)

@@ -2,7 +2,7 @@ function getData(){
   let data = ajaxGetRequest("graphBar", plotBar)
   let data2 = ajaxGetRequest("graphPie", plotPie)
   return data
-  return data2
+//   return data2
 }
 
 function plotBar(data){
